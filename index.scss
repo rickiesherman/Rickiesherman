@@ -1,0 +1,259 @@
+@import "css/components/reset.css";
+
+* {
+  outline: none;
+  text-decoration: none;
+}
+a:visited {
+  color: #0000f0;
+}
+html {
+  text-rendering: optimizeLegibility;
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  overflow: auto;
+}
+
+html, body {
+  padding: 0px;
+  margin: 0px;
+  font-size: 14px;
+}
+
+body {
+  font: 100% Helvetica, sans-serif;
+  background-color: #efefef;
+}
+.Container {
+  background: #fff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+.Sidebar {
+  background: #fff;
+  color: #0000F0;
+  width: 20rem;
+  height: 100%;
+  position: fixed;
+
+  &__description {
+    font-size: 1.025rem;
+    margin-right: 1rem;
+    color: #333;
+    line-height: 1.35rem;
+    margin-bottom: 1.5rem;
+  }
+  &__links {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 0.5rem;
+
+    & > * {
+      margin-bottom: 5px;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    flex: none;
+    flex-direction: row;
+    align-items: center;
+    font-size: 0.95rem;
+    justify-content: flex-start;
+    height: 1.75rem;
+    width: 100%;
+    padding: 1rem 0.5rem;
+    box-sizing: border-box;
+    margin-bottom: 0.5rem;
+    border: 1px solid #0000f0;
+    letter-spacing: 0.25px;
+    border-radius: 2px;
+    transition: 0.15s;
+
+    &:last-of-type {
+      margin-bottom: 0px;
+    }
+    &:hover {
+      cursor: pointer;
+      background: #0000f0;
+      color: #fff;
+    }
+
+    & > * {
+      margin-right: 8px;
+    }
+  }
+
+  &__title {
+    background: url('../img/Logo-white.svg') no-repeat;
+    background-size: 100%;
+    width: 100%;
+    padding: 15.75%;
+    box-sizing: border-box;
+    margin-bottom: 2rem;
+  }
+  &__subtitle {
+    font-size: 0.875rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+    opacity: 0.75;
+  }
+}
+.Header {
+  display: none;
+  background: #0000F0;
+  width: 100%;
+  height: 4rem;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.025), 0 1px 2px rgba(0,0,0,0.2);
+
+  &__title {
+    float: left;
+    margin-left: 1rem;
+    background: url('../img/Logo-white.svg') no-repeat center;
+    background-size: 100%;
+    width: 10rem;
+    height: 4rem;
+    padding: 16%;
+    box-sizing: border-box;
+  }
+  &__icon {
+    float: right;
+    font-size: 0.95rem;
+    line-height: 2rem;
+    margin: 1rem;
+    padding: 0rem 0.75rem;
+    box-sizing: border-box;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.25px;
+    background-color: #FFF;
+    color: #340041;
+    border-radius: 2px;
+    transition: 0.15s;
+
+    &:last-of-type {
+      margin-bottom: 0px;
+    }
+    &:hover {
+      cursor: pointer;
+      background-color: #fff;
+    }
+
+    & > * {
+      margin-right: 8px;
+    }
+  }
+
+  & a {
+    color: #0000f0;
+
+    &:hover {
+      color: #DC6464;
+    }
+  }
+
+  &__title {
+    padding: 1.5rem 2rem;
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+.Block {
+  &__section {
+    display: flex;
+    padding: 1rem;
+    &--horizontal {
+      flex-direction: row;
+    }
+    &--vertical {
+      flex-direction: column;
+    }
+  }
+}
+
+.Content {
+  max-width: 520px;
+  margin-left: 20rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  &__description {
+    font-size: 1rem;
+    line-height: 1.1rem;
+  }
+  &__picture {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    background: #ccc;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__item {
+    width: 100%;
+    border-radius: 2px;
+    background: #fff;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.055), 0px 1px 2px rgba(0,0,0,0.125);
+    margin-bottom: 1rem;
+    overflow: hidden;
+  }
+
+  &__text {
+    padding: 1rem;
+    font-size: 0.925rem;
+    width: 90%;
+    max-width: 640px;
+  }
+  &__link {
+    line-height: 0.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    font-weight: bold;
+    display: inline-block;
+    border-bottom: 1px dotted rgba(0,0,0,0.2);
+  }
+  &__title {
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .Sidebar {
+    visibility: hidden;
+    display: none;
+    transition: 0.125s ease-in-out;
+  }
+  .Header {
+    display: block;
+    position: fixed;
+    top: 0;
+
+  }
+  .Content {
+    margin-top: 4rem;
+    margin-left: 0rem;
+    transition: 0.125s ease-in-out;
+  }
+}
+
+@media (min-width: 700px) {
+  .Sidebar {
+    visibility: visible;
+    transition: 0.125s ease-in-out;
+  }
+  .Content {
+    margin-left: 20rem;
+    transition: 0.125s ease-in-out;
+  }
+}
