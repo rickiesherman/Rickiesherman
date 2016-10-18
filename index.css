@@ -147,7 +147,8 @@ body {
   flex-direction: column;
   padding: 2rem; }
   .Content__description {
-    margin-right: 2rem;
+    margin-right: 2.5rem;
+    max-width: 560px;
     font-size: 1.125rem;
     line-height: 1.4rem;
     color: #333; }
