@@ -1,270 +1,203 @@
-@import "css/components/reset.css";
-
 * {
-  outline: none;
   text-decoration: none;
-}
-a:visited {
-  color: #0000f0;
+  outline: 0;
 }
 html {
   text-rendering: optimizeLegibility;
-  overflow: hidden;
-  height: 100%;
 }
-
 body {
-  height: 100%;
-  overflow: auto;
+
+  margin: 0 auto;
+  font-size: 15px;
+  font-family: "Roboto";
+  background: url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/geometry.png");
+}
+.container-fluid {
+  max-width: 800px;
+}
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+.text-center {
+  text-align: center;
 }
 
-html, body {
-  padding: 0px;
-  margin: 0px;
-  font-size: 14px;
-}
-
-body {
-  font: 100% Helvetica, sans-serif;
-  background-color: #efefef;
-}
-
-.Container {
-  background: #fff;
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-}
-
-.Sidebar {
-  background: #fff;
-  color: #0000F0;
-  width: 20rem;
-  height: 100%;
-  position: fixed;
-
-  &__description {
-    font-size: 1.025rem;
-    margin-right: 1rem;
-    color: #333;
-    line-height: 1.35rem;
-    margin-bottom: 1.5rem;
-  }
-  &__links {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    margin-top: 0.5rem;
-
-    & > * {
-      margin-bottom: 5px;
-    }
-  }
-
-  &__icon {
-    display: flex;
-    flex: none;
-    flex-direction: row;
-    align-items: center;
-    font-size: 0.95rem;
-    justify-content: flex-start;
-    height: 1.75rem;
-    width: 100%;
-    padding: 1rem 0.5rem;
-    box-sizing: border-box;
-    margin-bottom: 0.5rem;
-    border: 1px solid #0000f0;
-    letter-spacing: 0.25px;
-    border-radius: 2px;
-    transition: 0.15s;
-
-    &:last-of-type {
-      margin-bottom: 0px;
-    }
-    &:hover {
-      cursor: pointer;
-      background: #0000f0;
-      color: #fff;
-    }
-
-    & > * {
-      margin-right: 8px;
-    }
-  }
-  &__title {
-    background: url('../img/Logo-white.svg') no-repeat;
-    background-size: 100%;
-    width: 100%;
-    padding: 15.75%;
-    box-sizing: border-box;
-    margin-bottom: 2rem;
-  }
-  &__subtitle {
-    font-size: 0.875rem;
-    font-weight: bold;
-    margin-bottom: 0.75rem;
-    opacity: 0.75;
-  }
-}
-
-.Header {
-  display: none;
-  background: #0000F0;
+.Hero {
   width: 100%;
-  height: 4rem;
-  flex-direction: row;
-  align-items: center;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.025), 0 1px 2px rgba(0,0,0,0.2);
-
-  &__title {
-    float: left;
-    margin-left: 1rem;
-    background: url('../img/Logo-white.svg') no-repeat center;
-    background-size: 100%;
-    width: 10rem;
-    height: 4rem;
-    padding: 16%;
-    box-sizing: border-box;
+  padding-top: 2rem;
+  background: #fff;
+  -webkit-box-shadow: 0 1px rgba(0,0,0,0.12);
+  -moz-box-shadow: 0 1px rgba(0,0,0,0.12);
+  box-shadow: 0 1px rgba(0,0,0,0.12);
+  color: #1D1D49;
+  &__brand {
+    margin-bottom: 3rem;
   }
-  &__icon {
-    float: right;
-    font-size: 0.95rem;
-    line-height: 2rem;
-    margin: 1rem;
-    padding: 0rem 0.75rem;
-    box-sizing: border-box;
+  &__logo {
+    display: inline-block;
+    background: url("../img/logo.svg") center no-repeat;
+    width: 15rem;
+    height: 6rem;
+  }
+  &__title {
+    font-weight: 300;
+    font-size: 1.25rem;
     margin-bottom: 0.5rem;
-    letter-spacing: 0.25px;
-    background-color: #FFF;
-    color: #340041;
-    border-radius: 2px;
-    transition: 0.15s;
+    letter-spacing: 2px;
+    color: #1D1D49;
+  }
+}
+.Footer {
+  padding: 3rem 0;
+  background-color: #1D1D49;
+}
+.Button {
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  margin: auto;
+  text-align: center;
+  color: #1D1D49;
+  background: transparent;
 
-    &:last-of-type {
-      margin-bottom: 0px;
-    }
+  &:focus {
+    outline: 0;
+  }
+  &__dark {
+    border: 1px solid #1D1D49;
+    border-radius: 999em;
+
     &:hover {
+      background: #1D1D49;
+      color: #fff;
+      transition: 0.2s;
       cursor: pointer;
-      background-color: #fff;
-    }
-
-    & > * {
-      margin-right: 8px;
     }
   }
-
-  & a {
-    color: #0000f0;
+  &__light {
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 999em;
 
     &:hover {
-      color: #DC6464;
+      background: #fff;
+      color: #1D1D49;
+      transition: 0.2s;
+      cursor: pointer;
     }
   }
+}
 
+.Feature {
+  display: block;
+  text-align: center;
+  margin: 2rem 0;
   &__title {
-    padding: 1.5rem 2rem;
     font-size: 1rem;
     line-height: 1.25rem;
   }
-}
-.Block {
-  &__section {
-    display: flex;
-    padding: 1rem;
-    &--horizontal {
-      flex-direction: row;
-    }
-    &--vertical {
-      flex-direction: column;
-    }
-  }
-}
 
-.Content {
-  max-width: 720px;
-  margin-left: 20rem;
-  display: flex;
-  flex-direction: column;
-  padding: 2rem;
-
-  &__description {
-    margin-right: 2.5rem;
-    max-width: 560px;
-    font-size: 1.125rem;
-    line-height: 1.4rem;
-    color: #333;
-  }
-  &__picture {
-    width: 100%;
-    display: block;
-    overflow: hidden;
-    background: #ccc;
-
-    img {
-      width: 100%;
-      height: auto;
-    }
-  }
-
-  &__item {
-    width: 100%;
-    border-radius: 2px;
-    background: #fff;
-    box-shadow: 0px 4px 12px rgba(0,0,0,0.055), 0px 1px 2px rgba(0,0,0,0.125);
-    margin-bottom: 1rem;
-    overflow: hidden;
-  }
-
-  &__text {
-    padding: 2rem;
-    font-size: 1rem;
-    width: 90%;
-    max-width: 640px;
-  }
-  &__link {
-    margin-bottom: 1rem;
-    padding-bottom: 0.5rem;
-    font-weight: bold;
+  &__image {
     display: inline-block;
-    transition: 0.12s linear;
+    height: 5rem;
+    width: 10rem;
+    margin: 0.75rem;
+    &--interface {
+      background: url("../img/interface.svg") center no-repeat;
+    }
+    &--music {
+      background: url("../img/music.svg") center no-repeat;
+    }
+  }
+  &__imageSquare {
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+
+    &--photoshop {
+      background: url("../img/photoshop.svg");
+    }
+    &--illustrator {
+      fill: red;
+      background: url("../img/illustrator.svg");
+    }
+    &--sketch {
+      background: url("../img/sketch.svg");
+    }
+    &--code {
+      background: url("../img/code.svg");
+    }
+    &--person {
+      background: url("../img/person.svg");
+    }
+  }
+}
+
+.Project {
+  background: #333;
+  overflow: hidden;
+  margin-bottom: 3rem;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2), 0 1px 3px rgba(0,0,0,0.15);
+  &--bugsnag {
+    background: #3676a1;
+    background-image: -webkit-radial-gradient(rgba(123,133,244,0.1),rgba(0,0,0,0)),-webkit-radial-gradient(bottom right,ellipse, rgba(49,196,196,0.3),rgba(0,0,0,0)),-webkit-radial-gradient(bottom left,ellipse, rgba(36,58,168,0.2),rgba(0,0,0,0)),-webkit-linear-gradient(#2d6f95 38.6%, #215b82);
+    background-image: radial-gradient(rgba(123,133,244,0.1),rgba(0,0,0,0)),radial-gradient(ellipse at bottom right, rgba(49,196,196,0.3),rgba(0,0,0,0)),radial-gradient(ellipse at bottom left, rgba(36,58,168,0.2),rgba(0,0,0,0)),linear-gradient(#2d6f95 38.6%, #215b82);
+  }
+  &--twitch {
+    background: #6441a5;
+  }
+  &__title {
+    color: #fff;
+    display: block;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
+  &__title a {
+
     &:hover {
+      cursor: pointer;
+      color: #fff;
       opacity: 0.75;
     }
   }
-  &__title {
-    font-size: 1.4rem;
-    margin-bottom: 0.25rem;
-    font-weight: 600;
-    color: #222;
+  &__body {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+    font-weight: 300;
+    opacity: 0.95;
   }
-}
-
-@media (max-width: 640px) {
-  .Sidebar {
-    visibility: hidden;
-    display: none;
-    transition: 0.125s ease-in-out;
+  &__preview {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    border-radius: 3px;
   }
-  .Header {
+  &__image {
+    border-radius: 3px;
+    margin-bottom: 2rem;
     display: block;
-    position: fixed;
-    top: 0;
-
+    height: 22rem;
+    max-height: 25rem;
+    width: 100%;
+    background: #fff no-repeat;
+    background-size: cover;
+    background-position: top left;
+    &--bugsnag {
+      background-image: url("https://bugsnag.com/assets/images/error-list-9719ac66.png");
+    }
+    &--twitch {
+      background-image: url("../img/twitch.png");
+    }
   }
-  .Content {
-    margin-top: 4rem;
-    margin-left: 0rem;
-    transition: 0.125s ease-in-out;
-  }
-}
-
-@media (min-width: 800px) {
-  .Sidebar {
-    visibility: visible;
-    transition: 0.125s ease-in-out;
-  }
-  .Content {
-    margin-left: 20rem;
-    transition: 0.125s ease-in-out;
+  &__content {
+    margin-top: 2rem;
+    color: #fff;
+    margin-bottom: 2rem;
   }
 }
