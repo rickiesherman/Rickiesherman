@@ -30,6 +30,7 @@ body {
   box-shadow: 0 1px rgba(0, 0, 0, 0.12);
   color: #1D1D49; }
   .Hero__brand {
+    max-width: 800px;
     margin-bottom: 3rem; }
   .Hero__logo {
     display: inline-block;
