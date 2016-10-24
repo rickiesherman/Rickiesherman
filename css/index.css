@@ -154,7 +154,7 @@ body {
     background-size: cover;
     background-position: top left; }
     .Project__image--bugsnag {
-      background-image: url("../img/bugsnag.svg"); }
+      background-image: url("../img/bugsnag.png"); }
     .Project__image--twitch {
       background-image: url("../img/twitch.png"); }
   .Project__content {
