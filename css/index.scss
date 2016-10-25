@@ -177,10 +177,8 @@ body {
     height: auto;
     margin: 0 auto;
     margin-bottom: 2rem;
-    border-radius: 3px;
   }
   &__image {
-    border-radius: 3px;
     margin-bottom: 2rem;
     display: block;
     height: 22rem;
@@ -188,7 +186,7 @@ body {
     width: 100%;
     background: #fff no-repeat;
     background-size: cover;
-    background-position: top left;
+    
     &--bugsnag {
       background-image: url("https://bugsnag.com/assets/images/error-list-9719ac66.png");
     }

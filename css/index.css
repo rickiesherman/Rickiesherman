@@ -140,18 +140,15 @@ body {
     width: 100%;
     height: auto;
     margin: 0 auto;
-    margin-bottom: 2rem;
-    border-radius: 3px; }
+    margin-bottom: 2rem; }
   .Project__image {
-    border-radius: 3px;
     margin-bottom: 2rem;
     display: block;
     height: 22rem;
     max-height: 25rem;
     width: 100%;
     background: #fff no-repeat;
-    background-size: cover;
-    background-position: top left; }
+    background-size: cover; }
     .Project__image--bugsnag {
       background-image: url("https://bugsnag.com/assets/images/error-list-9719ac66.png"); }
     .Project__image--twitch {
