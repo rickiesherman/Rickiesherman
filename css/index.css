@@ -150,7 +150,7 @@ body {
     background: #fff no-repeat;
     background-size: cover; }
     .Project__image--bugsnag {
-      background-image: url("https://bugsnag.com/assets/images/error-list-9719ac66.png"); }
+      background-image: url("../img/error-list.png"); }
     .Project__image--twitch {
       background-image: url("../img/twitch.png"); }
   .Project__content {
