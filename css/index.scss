@@ -145,9 +145,11 @@ body {
     background: #3676a1;
     background-image: -webkit-radial-gradient(rgba(123,133,244,0.1),rgba(0,0,0,0)),-webkit-radial-gradient(bottom right,ellipse, rgba(49,196,196,0.3),rgba(0,0,0,0)),-webkit-radial-gradient(bottom left,ellipse, rgba(36,58,168,0.2),rgba(0,0,0,0)),-webkit-linear-gradient(#2d6f95 38.6%, #215b82);
     background-image: radial-gradient(rgba(123,133,244,0.1),rgba(0,0,0,0)),radial-gradient(ellipse at bottom right, rgba(49,196,196,0.3),rgba(0,0,0,0)),radial-gradient(ellipse at bottom left, rgba(36,58,168,0.2),rgba(0,0,0,0)),linear-gradient(#2d6f95 38.6%, #215b82);
+    color: #F3FBFF;
   }
   &--twitch {
     background: #6441a5;
+    color: #FCF5FF;
   }
   &__title {
     color: #fff;
@@ -170,7 +172,6 @@ body {
     margin-bottom: 2rem;
     margin-right: 1rem;
     font-weight: 300;
-    opacity: 0.95;
   }
   &__preview {
     width: 100%;

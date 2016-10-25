@@ -116,9 +116,11 @@ body {
   .Project--bugsnag {
     background: #3676a1;
     background-image: -webkit-radial-gradient(rgba(123, 133, 244, 0.1), transparent), -webkit-radial-gradient(bottom right, ellipse, rgba(49, 196, 196, 0.3), transparent), -webkit-radial-gradient(bottom left, ellipse, rgba(36, 58, 168, 0.2), transparent), -webkit-linear-gradient(#2d6f95 38.6%, #215b82);
-    background-image: radial-gradient(rgba(123, 133, 244, 0.1), transparent), radial-gradient(ellipse at bottom right, rgba(49, 196, 196, 0.3), transparent), radial-gradient(ellipse at bottom left, rgba(36, 58, 168, 0.2), transparent), linear-gradient(#2d6f95 38.6%, #215b82); }
+    background-image: radial-gradient(rgba(123, 133, 244, 0.1), transparent), radial-gradient(ellipse at bottom right, rgba(49, 196, 196, 0.3), transparent), radial-gradient(ellipse at bottom left, rgba(36, 58, 168, 0.2), transparent), linear-gradient(#2d6f95 38.6%, #215b82);
+    color: #F3FBFF; }
   .Project--twitch {
-    background: #6441a5; }
+    background: #6441a5;
+    color: #FCF5FF; }
   .Project__title {
     color: #fff;
     display: block;
@@ -134,8 +136,7 @@ body {
     line-height: 1.5rem;
     margin-bottom: 2rem;
     margin-right: 1rem;
-    font-weight: 300;
-    opacity: 0.95; }
+    font-weight: 300; }
   .Project__preview {
     width: 100%;
     height: auto;
