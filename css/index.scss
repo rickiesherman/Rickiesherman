@@ -94,11 +94,11 @@ body {
   display: block;
   text-align: center;
   margin: 2rem 0;
+
   &__title {
     font-size: 1rem;
     line-height: 1.25rem;
   }
-
   &__image {
     display: inline-block;
     height: 5rem;
@@ -139,8 +139,8 @@ body {
   background: #333;
   overflow: hidden;
   margin-bottom: 3rem;
-  border-radius: 5px;
   box-shadow: 0 3px 10px rgba(0,0,0,0.2), 0 1px 3px rgba(0,0,0,0.15);
+
   &--bugsnag {
     background: #3676a1;
     background-image: -webkit-radial-gradient(rgba(123,133,244,0.1),rgba(0,0,0,0)),-webkit-radial-gradient(bottom right,ellipse, rgba(49,196,196,0.3),rgba(0,0,0,0)),-webkit-radial-gradient(bottom left,ellipse, rgba(36,58,168,0.2),rgba(0,0,0,0)),-webkit-linear-gradient(#2d6f95 38.6%, #215b82);
@@ -165,7 +165,7 @@ body {
     }
   }
   &__body {
-    font-size: 1.1rem;
+    font-size: 1.06rem;
     line-height: 1.5rem;
     margin-bottom: 2rem;
     margin-right: 1rem;
