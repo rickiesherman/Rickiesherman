@@ -124,6 +124,7 @@ body {
     color: #fff;
     display: block;
     font-size: 1.5rem;
+    line-height: 2rem;
     margin-bottom: 1rem;
     font-weight: 500; }
   .Project__title a:hover {
@@ -131,7 +132,7 @@ body {
     color: #fff;
     opacity: 0.75; }
   .Project__body {
-    font-size: 1.1rem;
+    font-size: 1.06rem;
     line-height: 1.5rem;
     margin-bottom: 2rem;
     margin-right: 1rem;
