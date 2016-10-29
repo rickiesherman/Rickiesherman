@@ -46,7 +46,9 @@ body {
 
 .Footer {
   padding: 3rem 0;
-  background-color: #1D1D49; }
+  background-color: #1D1D49;
+  color: #fff;
+ }
 
 .Button {
   font-weight: bold;
@@ -109,7 +111,8 @@ body {
       background: url("../img/person.svg"); }
 
 .Project {
-  background: #333;
+  background: #fff;
+  color: #333;
   overflow: hidden;
   margin-bottom: 3rem;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.15); }
@@ -118,45 +121,48 @@ body {
     background-image: -webkit-radial-gradient(rgba(123, 133, 244, 0.1), transparent), -webkit-radial-gradient(bottom right, ellipse, rgba(49, 196, 196, 0.3), transparent), -webkit-radial-gradient(bottom left, ellipse, rgba(36, 58, 168, 0.2), transparent), -webkit-linear-gradient(#2d6f95 38.6%, #215b82);
     background-image: radial-gradient(rgba(123, 133, 244, 0.1), transparent), radial-gradient(ellipse at bottom right, rgba(49, 196, 196, 0.3), transparent), radial-gradient(ellipse at bottom left, rgba(36, 58, 168, 0.2), transparent), linear-gradient(#2d6f95 38.6%, #215b82);
     color: #F3FBFF; }
+  .Project--cover {
+    background: #318373;
+    color: #fff;
+    background-size: cover;
+
+  }
   .Project--twitch {
     background: #6441a5;
     color: #FCF5FF; }
   .Project__title {
-    color: #fff;
     display: block;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     margin-bottom: 1rem;
     font-weight: 500; }
   .Project__title a:hover {
     cursor: pointer;
-    color: #fff;
     opacity: 0.75; }
   .Project__body {
-    font-size: 1.06rem;
-    line-height: 1.5rem;
+    font-size: 1.25rem;
+    line-height: 1.6rem;
     margin-bottom: 2rem;
-    margin-right: 1rem;
     font-weight: 300; }
+  .Project__body:last-child {
+    margin-bottom: 0rem;
+  }
   .Project__preview {
     width: 100%;
     height: auto;
     margin: 0 auto;
+    margin-top: 4rem;
     margin-bottom: 2rem; }
   .Project__image {
-    margin-bottom: 2rem;
     display: block;
-    height: 22rem;
-    max-height: 25rem;
     width: 100%;
-    background: #fff no-repeat;
     background-size: cover; }
-    .Project__image--bugsnag {
-      background-image: url("../img/error-list.png"); }
-    .Project__image--twitch {
-      background-image: url("../img/twitch.png"); }
+  .Project__image img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+  }
   .Project__content {
     margin-top: 2rem;
-    color: #fff;
     margin-bottom: 2rem; }
 
 /*# sourceMappingURL=index.css.map */
