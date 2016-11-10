@@ -29,9 +29,13 @@ body {
 }
 
 .container {
+  padding: 0 2rem;
+  box-sizing: border-box;
   max-width: 50rem;
 }
-
+.Content {
+  padding-bottom: 2rem;
+}
 .Hero {
   width: 100%;
   padding-top: 3rem;
@@ -57,6 +61,9 @@ body {
     color: #1D1D49;
   }
 }
+.navbar {
+  padding: 0.5rem 0;
+}
 .navbar-logo {
   display: inline-block;
   background: url("../img/logo-mini.svg") center no-repeat;
@@ -69,9 +76,7 @@ body {
   height: 2rem;
   width: 4rem;
 }
-.Content {
-  margin: 3rem 0;
-}
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -172,7 +177,7 @@ body {
   position: relative;
   transition: 0.15s ease-in-out;
   &__hero {
-    padding: 3rem 0 2rem 0;
+    padding: 2rem 0 2rem 0;
     border-bottom: 1px solid rgba(255,255,255,0.2);
   }
   &__block {
