@@ -2,17 +2,23 @@
   text-decoration: none;
   outline: 0; }
 
+html, body {
+  height: 100%; }
+
 html {
   text-rendering: optimizeLegibility; }
 
 body {
+  background: #f4f8f9;
+  min-height: 100%;
+  overflow: auto;
+  padding-bottom: 15rem;
   margin: 0 auto;
   font-size: 15px;
-  font-family: "Roboto";
-  background: url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/geometry.png"); }
+  font-family: "Roboto"; }
 
-.container-fluid {
-  max-width: 800px; }
+.wrapper {
+  min-height: 100%; }
 
 .col-centered {
   float: none;
@@ -21,17 +27,15 @@ body {
 .text-center {
   text-align: center; }
 
+.container {
+  max-width: 50rem; }
+
 .Hero {
   width: 100%;
-  padding-top: 2rem;
-  background: #fff;
-  -webkit-box-shadow: 0 1px rgba(0, 0, 0, 0.12);
-  -moz-box-shadow: 0 1px rgba(0, 0, 0, 0.12);
-  box-shadow: 0 1px rgba(0, 0, 0, 0.12);
+  padding-top: 3rem;
   color: #1D1D49; }
   .Hero__brand {
-    max-width: 800px;
-    margin-bottom: 3rem; }
+    max-width: 800px; }
   .Hero__logo {
     display: inline-block;
     background: url("../img/logo.svg") center no-repeat;
@@ -40,15 +44,28 @@ body {
   .Hero__title {
     font-weight: 300;
     font-size: 1.25rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
     letter-spacing: 2px;
     color: #1D1D49; }
 
-.Footer {
-  padding: 3rem 0;
-  background-color: #1D1D49;
-  color: #fff;
- }
+.navbar-logo {
+  display: inline-block;
+  background: url("../img/logo-mini.svg") center no-repeat;
+  height: 2rem;
+  width: 4rem; }
+
+.Content {
+  margin: 3rem 0; }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 15rem;
+  background-color: #1D1D49; }
 
 .Button {
   font-weight: bold;
@@ -111,58 +128,83 @@ body {
       background: url("../img/person.svg"); }
 
 .Project {
-  background: #fff;
-  color: #333;
+  background: #333;
   overflow: hidden;
-  margin-bottom: 3rem;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.15); }
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.15);
+  position: relative;
+  transition: 0.15s ease-in-out; }
+  .Project__hero {
+    padding: 3rem 0 2rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+  .Project__block {
+    height: 12rem; }
+  .Project:hover {
+    z-index: 1;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12), 0 2px 6px rgba(0, 0, 0, 0.07), 0 2px 2px rgba(0, 0, 0, 0.25); }
   .Project--bugsnag {
     background: #3676a1;
     background-image: -webkit-radial-gradient(rgba(123, 133, 244, 0.1), transparent), -webkit-radial-gradient(bottom right, ellipse, rgba(49, 196, 196, 0.3), transparent), -webkit-radial-gradient(bottom left, ellipse, rgba(36, 58, 168, 0.2), transparent), -webkit-linear-gradient(#2d6f95 38.6%, #215b82);
     background-image: radial-gradient(rgba(123, 133, 244, 0.1), transparent), radial-gradient(ellipse at bottom right, rgba(49, 196, 196, 0.3), transparent), radial-gradient(ellipse at bottom left, rgba(36, 58, 168, 0.2), transparent), linear-gradient(#2d6f95 38.6%, #215b82);
     color: #F3FBFF; }
-  .Project--cover {
-    background: #318373;
-    color: #fff;
-    background-size: cover;
-
-  }
   .Project--twitch {
-    background: #6441a5;
+    background: #5120b3;
+    background: -moz-linear-gradient(45deg, #5120b3 0%, #6441a5 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, #5120b3), color-stop(100%, #6441a5));
+    background: -webkit-linear-gradient(45deg, #5120b3 0%, #6441a5 100%);
+    background: -o-linear-gradient(45deg, #5120b3 0%, #6441a5 100%);
+    background: -ms-linear-gradient(45deg, #5120b3 0%, #6441a5 100%);
+    background: linear-gradient(45deg, #5120b3 0%, #6441a5 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5120b3', endColorstr='#6441a5', GradientType=1 );
     color: #FCF5FF; }
+  .Project--cover {
+    background: #65ae7a;
+    background: -moz-linear-gradient(-45deg, #65ae7a 0%, #479f90 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, #65ae7a), color-stop(100%, #479f90));
+    background: -webkit-linear-gradient(-45deg, #65ae7a 0%, #479f90 100%);
+    background: -o-linear-gradient(-45deg, #65ae7a 0%, #479f90 100%);
+    background: -ms-linear-gradient(-45deg, #65ae7a 0%, #479f90 100%);
+    background: linear-gradient(135deg, #65ae7a 0%, #479f90 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#65ae7a', endColorstr='#479f90', GradientType=1 );
+    color: #FCF5FF; }
+  .Project--whistle {
+    background: #53c839;
+    background: -moz-linear-gradient(-45deg, #53c839 0%, #7ac445 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, #53c839), color-stop(100%, #7ac445));
+    background: -webkit-linear-gradient(-45deg, #53c839 0%, #7ac445 100%);
+    background: -o-linear-gradient(-45deg, #53c839 0%, #7ac445 100%);
+    background: -ms-linear-gradient(-45deg, #53c839 0%, #7ac445 100%);
+    background: linear-gradient(135deg, #53c839 0%, #7ac445 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#53c839', endColorstr='#7ac445', GradientType=1 ); }
   .Project__title {
+    color: #fff;
     display: block;
-    font-size: 1.75rem;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
     margin-bottom: 1rem;
     font-weight: 500; }
   .Project__title a:hover {
     cursor: pointer;
+    color: #fff;
     opacity: 0.75; }
   .Project__body {
-    font-size: 1.25rem;
-    line-height: 1.6rem;
-    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-right: 1rem;
     font-weight: 300; }
-  .Project__body:last-child {
-    margin-bottom: 0rem;
-  }
   .Project__preview {
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    margin-top: 4rem;
-    margin-bottom: 2rem; }
-  .Project__image {
-    display: block;
-    width: 100%;
-    background-size: cover; }
-  .Project__image img {
-    display: block;
-    max-width: 100%;
-    margin: 0 auto;
-  }
+    margin-bottom: 4rem; }
+    .Project__preview img {
+      display: block;
+      margin: auto;
+      width: auto;
+      max-width: 100%;
+      margin-bottom: 2rem;
+      background-position: center;
+      background-size: contain; }
   .Project__content {
     margin-top: 2rem;
+    color: #fff;
     margin-bottom: 2rem; }
 
 /*# sourceMappingURL=index.css.map */

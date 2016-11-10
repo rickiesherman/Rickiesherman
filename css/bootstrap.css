@@ -388,7 +388,6 @@ blockquote {
 }
 
 a {
-  color: #0275d8;
   text-decoration: none;
 }
 
@@ -1950,7 +1949,7 @@ pre code {
   background-image: none;
   -webkit-background-clip: padding-box;
           background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255,255,255,1);
   border-radius: 0.25rem;
 }
 
