@@ -33,7 +33,8 @@ body {
   max-width: 50rem; }
 
 .Content {
-  padding-bottom: 2rem; }
+  padding-top: 3rem;
+  padding-bottom: 5rem; }
 
 .Hero {
   width: 100%;
@@ -92,7 +93,7 @@ body {
   .Button:focus {
     outline: 0; }
   .Button__dark {
-    border: 1px solid #1D1D49;
+    border: 2px solid #1D1D49;
     border-radius: 999em; }
     .Button__dark:hover {
       background: #1D1D49;
@@ -100,7 +101,7 @@ body {
       transition: 0.2s;
       cursor: pointer; }
   .Button__light {
-    border: 1px solid #fff;
+    border: 2px solid #fff;
     color: #fff;
     border-radius: 999em; }
     .Button__light:hover {
@@ -149,7 +150,7 @@ body {
   transition: 0.15s ease-in-out; }
   .Project__hero {
     padding: 2rem 0 2rem 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2); }
   .Project__block {
     height: 12rem; }
   .Project:hover {
@@ -220,7 +221,7 @@ body {
     margin-right: 1rem;
     font-weight: 300; }
   .Project__preview {
-    margin-bottom: 4rem; }
+    margin-bottom: 5rem; }
     .Project__preview img {
       display: block;
       margin: auto;
@@ -230,7 +231,7 @@ body {
       background-position: center;
       background-size: contain; }
   .Project__content {
-    margin-top: 2rem;
-    margin-bottom: 2rem; }
+    margin-top: 3rem;
+    margin-bottom: 3rem; }
 
 /*# sourceMappingURL=index.css.map */

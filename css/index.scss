@@ -34,7 +34,8 @@ body {
   max-width: 50rem;
 }
 .Content {
-  padding-bottom: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
 }
 .Hero {
   width: 100%;
@@ -101,7 +102,7 @@ body {
     outline: 0;
   }
   &__dark {
-    border: 1px solid #1D1D49;
+    border: 2px solid #1D1D49;
     border-radius: 999em;
 
     &:hover {
@@ -112,7 +113,7 @@ body {
     }
   }
   &__light {
-    border: 1px solid #fff;
+    border: 2px solid #fff;
     color: #fff;
     border-radius: 999em;
 
@@ -178,7 +179,7 @@ body {
   transition: 0.15s ease-in-out;
   &__hero {
     padding: 2rem 0 2rem 0;
-    border-bottom: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 2px solid rgba(255,255,255,0.2);
   }
   &__block {
     height: 12rem;
@@ -264,8 +265,7 @@ body {
     font-weight: 300;
   }
   &__preview {
-    margin-bottom: 4rem;
-
+    margin-bottom: 5rem;
 
     & img {
       display: block;
@@ -278,7 +278,7 @@ body {
     }
   }
   &__content {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
   }
 }
