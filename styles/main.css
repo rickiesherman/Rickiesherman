@@ -4981,6 +4981,12 @@ button.list-group-item-danger {
   .panel-danger > .panel-footer + .panel-collapse > .panel-body {
     border-bottom-color: #ebccd1; }
 
+.emoji {
+  display: block;
+  float: left;
+  margin-right: 15px;
+}
+
 .embed-responsive {
   position: relative;
   display: block;
