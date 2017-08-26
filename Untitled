@@ -1,0 +1,63 @@
+IOpipe notes:
+
+LAYOUT
+---
+The proportions of the website could be adjusted in the following way to make IOpipe easier to use:
+
+- Make Header smaller and remove filter & controls from the right side
+
+- Move Project selector to the left side, next to the header's logo and right above the title of the Content block.
+
+- Make Sidebar bigger
+  - Fix sidebar to left side for easier navigation when scrolling through content
+
+- Loosen spacing around list items in Sidebar and remove caps text styling
+
+- Add more padding to list items to make it more legible
+
+- At mobile sizes, the sidebar could be turned into a dock menu, similar to iOS.
+
+- The size of the modal is too big
+
+
+PAGES
+---
+- Functions
+  - Allowing the user to switch between "Function Invocations" and "Mean Invocation Duration" with a split button would save space & allow for more chart detail & clarity when reading.
+    - The extra space may allow for tooltips and extra details. Each point could have a tooltip that links to the respective event.
+
+  - Moving the filter controls from the Header to where the subtitle is removes the issue of repetitive information, saves some space, and contextualizes the actions you're taking.
+
+  - "Search Functions" section is a little too close to the charts, loosening the spacing between the two releases the visual tension between the bottom of the charts and the title of the "Search Functions" form
+
+  - Overlapping colors clash a lot and are hard to read at a glance, could be adjusted to be more harmonious.
+
+  - Coloring "Alarm" and "OK" cells a light green or red would make the list-view easier to skim through
+
+- Alerts
+  - Needs hover and focus states for the cells
+
+  - Make the title of cell a little bigger and bold for readability
+
+  - Visually separate Search form & title from cells
+
+- Install
+  - Add bold effect to title
+  - Add more padding & separator to the end of each section for readability
+
+- Profile
+  - Remove subtitle
+
+  - Put Avatar and Account credentials beside each other in a 2 column layout
+
+  - Left-align save button
+
+- Help
+
+
+VISUAL/GENERAL CRITIQUE
+---
+
+- Background colors need more contrast, the sidebar and header blend together and feel heavy against the white Content section. A neutral colored sidebar with dark text would make it feel better underneath the blue Header.
+
+- Hover states haven't been implemented & Focus states are fairly understated. Adding/emphasizing this effect would help with reading long lists or tabbing through

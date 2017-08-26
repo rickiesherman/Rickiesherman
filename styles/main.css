@@ -11,7 +11,44 @@ html {
   -webkit-text-size-adjust: 100%; }
 
 body {
-  margin: 0; }
+  margin: 0;
+  text-rendering: optimizeLegibility;
+}
+
+.button {
+  -webkit-appearance: none;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #972ee8;
+  background-color: #972ee8;
+  color: #fff;
+  font-size: 1.333em;
+  line-height: 2em;
+  padding: 0 0.5em;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.12);
+  margin-top: 16px;
+  margin-bottom: 16px;
+  border-radius: 3px;
+  transition: 0.125s linear;
+}
+.button:hover {
+}
+.button:focus {
+  outline: none;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.1), 0 2px 5px rgba(0,0,0,0.12);
+
+
+}
+.button:active {
+
+  background-color: #b776db;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+
+}
 
 article,
 aside,
@@ -5924,7 +5961,6 @@ button.close {
     display: block; } }
 
 .body {
-  text-rendering: optimizeLegibility;
   font-size: 14px;
   line-height: 1.3em;
   background: #F7F7F7; }
@@ -5970,9 +6006,12 @@ button.close {
     color: rgba(255, 255, 255, 0.8);
     transition: 0.15s linear color; }
     .hero .a:hover {
-      color: rgba(255, 255, 255, 0.95);
+      color: rgba(255, 255, 255, 1);
       text-decoration: none;
       cursor: pointer; }
+      .hero .a.active {
+        color: rgba(255,255,255,1);
+      }
   .hero .h1, .hero .h2, .hero .h3, .hero .h4 {
     color: #fff; }
   .hero .h2 {
@@ -5992,8 +6031,8 @@ button.close {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    padding-bottom: 1.777em;
-    padding-top: 1.777em; }
+    margin-bottom: 1em;
+    margin-top: 1em; }
   .hero .picture {
     background: #fff;
     box-shadow: 0 2px 5px rgba(30, 10, 51, 0.3), 0 1px rgba(30, 10, 51, 0.1);
@@ -6031,7 +6070,7 @@ button.close {
     margin-top: 1.333em;
     margin-bottom: 2.369em;
     position: relative;
-    max-width: 630px; }
+    max-width: 570px; }
     .skills .experience .description:after {
       background: rgba(30, 10, 51, 0.05);
       bottom: -10px;
@@ -6064,12 +6103,17 @@ button.close {
       padding-left: 15px;
       padding-top: 0.422em;
       position: relative;
-      width: auto; }
+      width: auto;
+      transition: 0.125s linear back;  }
+
       .skills .list .li:hover {
-        color: #1e0a33;
+        background: -webkit-linear-gradient(left, rgba(151, 46, 232, 0.7) 0%, #fff 100%);
+        text-shadow: 0 1px 0.5px rgba(151, 46, 232, 0.75);
+        color: #fff;
         border-left: 1px solid rgba(151, 46, 232, 0.5); }
 
 .card {
+  max-width: 640px;
   box-sizing: border-box;
   background: #fff;
   border-bottom: 1px solid #fff;
