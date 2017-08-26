@@ -6107,7 +6107,7 @@ button.close {
       transition: 0.125s linear back;  }
 
       .skills .list .li:hover {
-        background: -webkit-linear-gradient(left, rgba(151, 46, 232, 0.7) 0%, #fff 100%);
+        background: -webkit-linear-gradient(left, rgba(151, 46, 232, 0.7) 0%, rgba(255,255,255,0) 100%);
         text-shadow: 0 1px 0.5px rgba(151, 46, 232, 0.75);
         color: #fff;
         border-left: 1px solid rgba(151, 46, 232, 0.5); }
