@@ -14,9 +14,6 @@
   .contact {
     font-size: 1.2em;
   }
-  .project {
-    border-radius: 0px;
-  }
 }
 
 html, body {
@@ -43,14 +40,12 @@ h3 {
   font-size: 1.5em;
   margin-bottom: 0.3em;
   font-weight: 400;
-
 }
 
 h4 {
   font-size: 1.4em;
   margin-bottom: 0.25em;
   font-weight: bold;
-
 }
 
 h5 {
@@ -108,9 +103,11 @@ img {
   transform: scale(1.5);
 
 }
+
 .subtitle {
   font-style: italic;
 }
+
 .badge {
   box-sizing: border-box;
   color: #3310FF;
@@ -118,11 +115,18 @@ img {
   margin-bottom: 2em;
   padding: 2em;
   transition: 0.12s ease 0s;
+  border-bottom: 1px solid #eff0f1;
 }
+
+.badge:hover {
+  background: #3310FF;
+  color: #fff;
+  border-bottom: 1px solid #3310FF;
+}
+
 .project {
   border: 1px solid #eff0f1;
   box-shadow: 0 0.1em 4em rgba(0,0,0,0.05);
-  border-radius: 0.3em;
   margin: calc(-2em - 1px);
   margin-bottom: 10em;
   padding: 2em;
@@ -135,14 +139,10 @@ img {
   border: 1px solid #3310FF;
 }
 
-
 .project img:last-child {
   margin: 0;
 }
-.badge:hover {
-  background: #3310FF;
-  color: #fff;
-}
+
 
 .footer {
   background: #000;
