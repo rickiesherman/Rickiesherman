@@ -7,6 +7,15 @@
   outline: 0;
 }
 
+@media screen and (max-width: 600px) {
+  * {
+    font-size: 12px;
+  }
+  .contact {
+    font-size: 1.2em;
+  }
+}
+
 html, body {
   height: 100%;
   width: 100%;
@@ -23,7 +32,7 @@ h2 {
   font-weight: 800;
   margin-bottom: 0.33em;
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 0.5em;
   transform: scale(1, 0.85);
 }
 
@@ -59,59 +68,61 @@ a {
 img {
   width: 100%;
   height: auto;
-  margin-bottom: 40px;
+  margin-bottom: 4em;
 }
 
 .container {
   max-width: 96em;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 2em;
 }
 
 .header {
-  padding: 60px 0;
-  margin-bottom: 40px;
+  padding: 6em 0;
+  margin-bottom: 4em;
   text-align: center;
   color: #3310FF;
 }
 
 .contact {
-  font-size: 1.5em;
-  border-radius: 4px;
   background: #fff;
-  box-shadow: 0 5px 25px rgba(0,0,0,0.1), 0 2px 4px rgba(0,0,0,0.05);
-  padding: 10px 15px;
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  transition: 0.2s ease-in 0s;
+  border-radius: 0.4em;
+  bottom: 2em;
+  box-shadow: 0 0.5em 2.5em rgba(0,0,0,0.1), 0 2px 4px rgba(0,0,0,0.05);
   color: #3310FF
+  font-size: 1.5em;
+  padding: 1em 1.5em;
+  position: fixed;
+  right: 2em;
+  transition: 0.2s ease-in 0s;
+  z-index: 3;
 }
 
 .contact:hover {
   background: #3310FF;
   color: #fff;
-  transform: scale(1.5);
   transform-origin: bottom right;
+  transform: scale(1.5);
 
 }
 .subtitle {
   font-style: italic;
 }
 .badge {
-  margin: -20px;
-  padding: 20px;
-  margin-bottom: 20px;
   box-sizing: border-box;
   color: #3310FF;
+  margin: -2em;
+  margin-bottom: 2em;
+  padding: 2em;
   transition: 0.12s ease 0s;
 }
 .project {
-  padding: 20px;
-  margin: -20px;
-  margin-bottom: 100px;
-  box-shadow: 0 1px 40px rgba(0,0,0,0.05);
   border: 1px solid #eff0f1;
+  box-shadow: 0 0.1em 4em rgba(0,0,0,0.05);
+  margin: calc(-2em - 1px);
+  margin-bottom: 10em;
+  padding: 2em;
+  text-align: center;
   transition: 0.12s ease 0s;
 }
 
@@ -120,10 +131,6 @@ img {
   border: 1px solid #3310FF;
 }
 
-.project:nth-child(odd){
-
-
-}
 
 .project img:last-child {
   margin: 0;
