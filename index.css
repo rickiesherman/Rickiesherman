@@ -7,6 +7,20 @@
   outline: 0;
 }
 
+@media only screen and (-webkit-min-device-pixel-ratio: 4),
+       only screen and (-webkit-device-pixel-ratio : 4),
+       only screen and (device-width: 360px),
+       only screen and (device-width: 640px),
+       only screen and (orientation: portrait)
+  {
+   * {
+     font-size: 12px;
+   }
+   .contact {
+     font-size: 1.2em;
+   }
+  }
+
 @media screen and (max-width: 600px) {
   * {
     font-size: 12px;
