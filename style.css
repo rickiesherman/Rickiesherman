@@ -1,0 +1,190 @@
+/* System */
+* {
+  padding: 0;
+  margin: 0;
+  color: #D8D5FF;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+html, body {
+  background: #050A14;
+  font-size: 15px;
+  margin: 0;
+  outline: none;
+  padding: 0;
+  text-decoration: none;
+}
+
+a {
+  color: #D8D5FF;
+}
+
+
+h1 {
+  color: #D8D5FF;
+  font-size: 4em;
+  margin-bottom: .5em;
+}
+
+h2 {
+  color: #D8D5FF;
+  font-size: 2em;
+  margin-bottom: .25em;
+
+}
+
+h3 {
+  color: #C8CBCF;
+  font-size: 1.5em;
+  margin-bottom: 0.75em;
+
+}
+
+h4 {
+  font-size: 1em;
+
+}
+
+p {
+  font-size: 1em;
+  color: #D8D5FF;
+}
+
+/* Colors */
+.red {
+  color: #F15874;
+}
+
+.purple {
+ color: #BC78FF;
+}
+
+.blue {
+  color: #8278FF;
+}
+
+.button, .button a {
+  border-radius: 5px;
+  border: 2px solid #8278FF;
+  color: #D8D5FF;
+  padding: 5px 10px;
+  transition: all 0.15s;
+}
+
+.button:hover, .button a:hover {
+  background: #8278FF;
+  color: #FFF;
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  height: 2em;
+  margin-bottom: 3em;
+  width: 100%;
+  justify-content:space-between;
+}
+
+.header a {
+  background: #8278FF;
+  border-radius: 5px;
+  color: #fff;
+  line-height: 2em;
+  padding: 0 1em;
+  transition: 0.15s;
+  border: 2px solid #8278FF;
+}
+
+.header a:hover {
+  color: #D8D5FF;
+  background: #6450F0;
+  text-decoration: none;
+}
+
+.header .item {
+  line-height: 2em;
+}
+
+.header .end {
+  align-self: flex-end;
+}
+
+.logo {
+  background: #8278FF;
+  border-radius: 5px;
+  display: inline-block;
+  height: 2em;
+  width: 2em;
+  margin-right: 0.5em;
+}
+
+.root {
+  font-family: "Work Sans";
+  margin: 0 auto;
+  max-width: 40em;
+}
+
+.content {
+  margin: 4em 2em;
+}
+
+.summary {
+  margin-bottom: 4em;
+}
+
+.button, .button a {
+  background: #8278FF;
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: 2px solid #8278FF;
+  color: #D8D5FF;
+  transition: all 0.15s;
+}
+
+.button:hover, .button a:hover {
+  background: #6450F0;
+  text-decoration: none;
+  color: #FFF;
+}
+
+.job {
+  border: 1px solid transparent;
+  padding: 10px;
+  margin: -10px;
+  border-radius: 5px;
+  margin-bottom: 1.5em;
+  transition: all 0.2s;
+}
+
+.job:hover {
+  cursor: pointer;
+  border-color: #8278FF;
+}
+
+
+.job a:hover {
+  text-decoration: none;
+}
+
+.title-bold {
+  font-weight: bold;
+}
+
+.information {
+  width: 100%;
+  margin-bottom: 3em;
+}
+
+.information .past-work {
+  margin-bottom: 1em;
+}
+
+.buttons {
+  margin:1em 0 2.5em 0;
+}
