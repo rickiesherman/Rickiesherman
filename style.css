@@ -82,6 +82,11 @@ p {
   text-decoration: none;
 }
 
+.date {
+  font-style: italic;
+  opacity: 0.5;
+}
+
 .header {
   display: flex;
   flex-direction: row;
